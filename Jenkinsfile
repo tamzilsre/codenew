@@ -15,7 +15,8 @@ pipeline {
             post {
                 success {
                     echo "Now Archiving."
-                    archiveArtifacts artifacts: '**/*.war'
+                    archiveArtifacts artifacts: '/var/lib/jenkins/workspace/29jansampleproject/target/*.war
+'
                 }
             }
         }
